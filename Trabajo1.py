@@ -20,13 +20,14 @@ Requisitos:
     hh
 
 '''
-# Funciomes
+# Funciones
 def fahrenheit_a_celsius(f):
     return (f - 32) * 5 / 9
+
 def celsius_a_fahrenheit(c):
     return (c * 9 / 5) + 32
-#Funcion principal
 
+# Función principal
 def main():
     # Solicitar al usuario cuántas temperaturas desea convertir
     n = int(input("¿Cuántas temperaturas desea convertir? "))
@@ -64,7 +65,6 @@ def main():
         else:
             print(f"{temp:<20} {unidad:<10} {temp_conv:<25.2f} {'F'}")
 
-            # Ejecutar la funcion principal
-            if __name__== "_main_ ":
-                main()
-
+# Ejecutar la función principal
+if __name__ == "__main__":
+    main()
